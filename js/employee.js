@@ -12,8 +12,8 @@ function hienthi() {
     tablePopup.style.display = "block";
     //Gán giá trị cho các ô nhập
     document.getElementById("txtEmployeeCode").value = item["EmployeeCode"];
-    console.log(document.getElementById("txtEmployeeCode").value);
-    console.log(item["EmployeeCode"]);
+    // console.log(document.getElementById("txtEmployeeCode").value);
+    // console.log(item["EmployeeCode"]);
     document.getElementById("txtEmployeeCode").disabled = true;
     document.getElementById("txtFullName").value = item["FullName"];
     document.getElementById("txtIdentityCard").value = item["IdentityNumber"];
