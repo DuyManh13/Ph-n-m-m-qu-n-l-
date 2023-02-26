@@ -1,0 +1,157 @@
+.popup {
+    width: 100%;
+    background: rgba(0, 0, 0, .4);
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    opacity: 1;
+    display: none;
+}
+
+.popup-size {
+    width: 900px;
+    background-color: #FFFFFF;
+    position: absolute;
+    border-radius: 4px;
+    top: calc(50% - 312px);
+    right: calc(50% - 450px);
+}
+
+/* popup header */
+.popup-header {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.popup-title {
+    display: flex;
+    align-items: center;
+    margin-left: 24px;
+    column-gap: 8px;
+}
+
+.popup-close {
+    display: flex;
+    margin-right: 12px;
+    column-gap: 8px;
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+    margin-left: 8px;
+}
+
+.checkbox input {
+    width: 24px;
+    height: 24px;
+}
+
+/* popup content */
+.popup-content {
+    box-sizing: border-box;
+    width: 100%;
+    height: calc(100% - 80px - 60px);
+    padding: 20px 24px;
+    flex-wrap: wrap;
+}
+
+span {
+    color: red;
+}
+
+.employee-info {
+    display: flex;
+    column-gap: 16px;
+    flex-wrap: wrap;
+}
+
+.info-left {
+    width: calc(50% - 8px);
+}
+
+.info-right {
+    width: calc(50% - 8px);
+}
+
+.info-contact {
+    width: 100%;
+}
+
+input::placeholder {
+    color: #999999;
+    font-size: 14px;
+}
+
+input:hover {
+    background-color: #e6e6e6;
+}
+
+.bot-2 {
+    display: flex;
+    column-gap: 8px;
+}
+
+.bot-3 {
+    display: flex;
+    column-gap: 8px;
+}
+
+.right-8 {
+    margin-right: 8px
+}
+
+/* popup footer */
+.popup-footer {
+    width: 100%;
+    height: 60px;
+    background-color: #F5F5F5;
+    border-top: 1px solid #E0E0E0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn {
+    border: 1px solid #E0E0E0;
+    height: 36px;
+    border-radius: 4px;
+    background: #50b83c;
+    font-weight: 500;
+    text-align: center;
+    line-height: 36px;
+    color: #212121;
+}
+
+.btn-left {
+    margin-left: 33px;
+    width: 80px;
+    margin-top: 10px;
+    background-color: #FFFFFF;
+}
+
+.btn-right {
+    display: flex;
+    column-gap: 12px;
+    align-items: center;
+    margin-right: 32px;
+}
+
+.btn-1 {
+    width: 80px;
+    background-color: #FFFFFF;
+}
+
+.btn-2 {
+    padding: 0px 15px;
+    color: #FFFFFF;
+}
+
+.btn:hover {
+    background-color: #57C841;
+    cursor: pointer;
+}

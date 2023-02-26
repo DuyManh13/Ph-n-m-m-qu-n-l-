@@ -1,0 +1,97 @@
+/* 1. Css components */
+@import url(./components/button.css);
+@import url(./components/toast.css);
+@import url(./components/table.css);
+@import url(/css/components/switch.css);
+@import url(/css/components/popup.css);
+@import url(/css/components/input.css);
+@import url(/css/components/checkbox.css);
+@import url(/css/components/radiobtn.css);
+@import url(/css/components/combobox.css);
+@import url(/css/components/dropdown.css);
+/* 2. Css layout */
+@import url(./layout/body.css);
+@import url(./layout/header.css);
+@import url(./layout/menu.css);
+@import url(./layout/container.css);
+@import url(./layout/content.css);
+@import url(./layout/loading.css);
+/* 3. Css font chữ */
+@font-face {
+    font-family: manh;
+    src: url(/Resource/font/GoogleSans-Regular.otf);
+}
+*{
+    font-family: manh;
+    font-size: 13px;
+    margin: 0;
+}
+body {
+    margin: 0;
+}
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+    
+}
+  
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 4px;
+}
+  
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #cdd3d6;
+    border-radius: 4px;
+}
+  
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #cdd3d6;
+    border-radius: 4px;
+}
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-row {
+    display: flex;
+}
+
+.top-2 {
+    margin-top: 20px;
+}
+
+.gap-8 {
+    column-gap: 8px;
+}
+
+.m-top {
+    margin-top: 9px;
+}
+
+.flex {
+    display: flex;
+}
+.font{
+    font-size: 13px;
+    font-weight: 500;
+    color: #1f1f1f;
+}
+.font-20{
+    font-size: 20px;
+    font-weight: 700;
+    color: #1f1f1f
+}
+.m-row+.m-row{
+    margin-top: 14px;
+}
+.flex-1{
+    flex: 1;
+}
+.width-80{
+    width: 80%;
+}

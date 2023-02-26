@@ -1,0 +1,56 @@
+.title-btn {
+    height: 36px;
+    background-color: #50B83C;
+    align-items: center;
+    border-radius: 4px;
+    font-size: 14px;
+    min-width: 80px;
+    color: #FFFFFF;
+    font-weight: 500;
+    margin-right: 10px;
+    border: #50B83C;
+}
+.title-btn:hover{
+    background-color: #57C841;
+    cursor:pointer;
+}
+.checkbox-container {
+    display: block;
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    font-size: 16px;
+    user-select: all;
+}
+
+/* .pri-btn {
+    margin: 24px;
+    height: 36px;
+    border-radius: 4px;
+    background: #50b83c;
+    font-weight: 500;
+    font-size: 14px;
+    text-align: left;
+    text-align: center;
+    line-height: 36px;
+    color: #fff;
+}
+
+.pri-btn:hover {
+    background-color: #57C841;
+    cursor: pointer;
+} */
+.radio-btn{
+    margin-right: 10px;
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+.radio-btn input{
+    align-items: center;
+    width: 20px;
+    height: 20px;
+}

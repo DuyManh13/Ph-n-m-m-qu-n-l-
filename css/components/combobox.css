@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+}
+
+.hero {
+    width: 200px;
+    height: 56px;
+    position: relative;
+    right: 332px;
+    top: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.selector {
+    position: absolute;
+    width: 200px;
+    height: 36px;
+    background-color: #FFFFFF;
+    border: 1px solid #9E9E9E;
+    border-radius: 3px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#selectField {
+    margin: 8px auto 9px 12px;
+    box-sizing: border-box;
+    background-color: #FFFFFF;
+
+}
+
+.placehold {
+    border-radius: 4px;
+    font-family: Roboto;
+    font-size: 14px;
+    color: #9E9E9E;
+}
+
+.item-cbbx {
+    background: url(/Resource/img/Sprites.64af8f61.svg) no-repeat -371px -358px;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    margin: 8px 8px 10px auto;
+    transition: transform 0.5s;
+}
+.rotate{
+    transform: rotate(180deg);
+    transform-origin: 5px 9px;
+}
+
+.option {
+    display: flex;
+    align-items: center;
+    width: 184px;
+    height: 36px;
+    list-style: none;
+    padding: 0px 8px;
+    margin-left: 8px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #FFFFFF;
+}
+
+#list {
+    width: 200px;
+    height: 36px;
+    padding: 0px;
+}
+
+.body-selector {
+    top: -197px;
+    position: absolute;
+    width: 200px;
+    height: 196px;
+    padding-top: 8px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #FFFFFF;
+}
+.option:hover {
+    background-color: #50B83C;
+    cursor: pointer;
+    color: #FFFFFF;
+}
+.hiden{
+    visibility: hidden;
+}
+.selector:hover{
+    cursor: pointer;
+    border: 1px solid #50B83C;
+}
+.divider{
+    width: 40px;
+    height: 36px;
+    border-left: 1px solid #E6E6E6;
+    background-color: #F5F5F5;
+}

@@ -1,0 +1,22 @@
+.input-wrapper{
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+}
+input{
+    height: 36px;
+    border: 1px solid #E0E0E0;
+    outline: none;
+    border-radius: 4px;
+    padding: 0 12px;
+}
+input:focus{
+    border-color: #50B83C;
+}
+.input--error{
+    border-color: #ff0000 !important;
+}
+.error-info{
+    color: #ff0000;
+}
+  

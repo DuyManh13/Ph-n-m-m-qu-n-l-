@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Toast</title>
+    <link rel="stylesheet" href="/css/main.css" />
+  </head>
+  <body>
+     <div class="body">
+         <!-- Toast message -->
+      <!-- Toast success -->
+      <div class="toast__success">
+        <div class="toast__left">
+          <div class="toast__icon"></div>
+          <p class="toast__text">
+            <strong class="text-success">Thành Công! </strong>Công việc bị đã bị
+            xoá
+          </p>
+        </div>
+        <div class="toast__right">
+          <div class="toast__additional">Hoàn tác</div>
+          <div class="toast__exit"></div>
+        </div>
+      </div>
+
+      <!-- Toast warning -->
+      <div class="toast__warning">
+        <div class="toast__left">
+          <div class="toast__icon-warning"></div>
+          <p class="toast__text">
+            <strong class="text-warning">Cảnh báo! </strong>Dữ liệu của bạn đã
+            bị thay đổi bởi người dùng khác
+          </p>
+        </div>
+        <div class="toast__exit"></div>
+      </div>
+
+      <!-- Toast error -->
+      <div class="toast__error">
+        <div class="toast__left">
+          <div class="toast__icon-error"></div>
+          <p class="toast__text-error">
+            <strong class="text-error">Lỗi! </strong>Không thể cập nhật được dữ
+            liệu. Vui lòng kiểm tra lại kết nối internet <br /><span
+              class="toast__additional"
+              >Xem hướng dẫn</span
+            >
+          </p>
+        </div>
+        <div class="toast__exit"></div>
+      </div>
+      <!-- Dialog warning -->
+      <div class="dialog__exit-employeeCode">
+        <div class="warning">
+          <div class="icon-warning"></div>
+          <p class="dialog-text">
+            Mã nhân viên &ltNV-0001&gt đã tồn tại trong hệ thống, vui lòng kiểm
+            tra lại
+          </p>
+        </div>
+        <div class="dialog-line"></div>
+        <input type="button" value="Đồng ý" class="btn-yes" />
+      </div>
+      <!-- <div class="feature__edit"></div> -->
+     </div>
+  </body>
+</html>

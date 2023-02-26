@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Phần mềm quản lí nhân viên CukCuk.Vn</title>
+  <link rel="stylesheet" href="/css/main.css" />
+</head>
+
+<body>
+  <!-- Loading -->
+  <div id="loading" class="loading">
+    <div class="loading-circle"></div>
+    <div class="loading-text">Loading...</div>
+  </div>  
+  <!-- Container   -->
+  <div class="container">
+    <div class="menu">
+      <div class="menu-header">
+        <div class="menu-switch"></div>
+        <div class="menu-logo">
+          <img src="/Resource/img/Logo_Module_TiengViet_White.66947422.svg" alt="Logo" height="36px" />
+        </div>
+      </div>
+      <div class="menu-content">
+        <div class="item">
+          <div class="item-1"></div>
+          <div class="menu-text">Tổng quan</div>
+        </div>
+        <div class="item1">
+          <div class="item-2"></div>
+          <div class="menu-text">Tiền gửi</div>
+        </div>
+        <div class="item1">
+          <div class="item-3"></div>
+          <div class="menu-text">Mua hàng</div>
+        </div>
+        <div class="item1">
+          <div class="item-4"></div>
+          <div class="menu-text">Bán hàng</div>
+        </div>
+        <div class="item1">
+          <div class="item-5"></div>
+          <div class="menu-text">Quản lí hóa đơn</div>
+        </div>
+        <div class="item1">
+          <div class="item-6"></div>
+          <div class="menu-text">Kho</div>
+        </div>
+        <div class="item1">
+          <div class="item-7"></div>
+          <div class="menu-text">Công cụ dụng cụ</div>
+        </div>
+        <div class="item1">
+          <div class="item-8"></div>
+          <div class="menu-text">Tài sản cố định</div>
+        </div>
+        <div class="item1">
+          <div class="item-9"></div>
+          <div class="menu-text">Thuế</div>
+        </div>
+        <div class="item1">
+          <div class="item-10"></div>
+          <div class="menu-text">Giá thành</div>
+        </div>
+        <div class="item1">
+          <div class="item-11"></div>
+          <div class="menu-text">Tiền mặt</div>
+        </div>
+        <div class="item1">
+          <div class="item-12"></div>
+          <div class="menu-text">Tổng hợp</div>
+        </div>
+        <div class="item1">
+          <div class="item-13"></div>
+          <div class="menu-text">Ngân sách</div>
+        </div>
+        <div class="item1">
+          <div class="item-14"></div>
+          <div class="menu-text">Báo cáo</div>
+        </div>
+        <div class="item1">
+          <div class="item-15"></div>
+          <div class="menu-text">Phân tích tài chính</div>
+        </div>
+      </div>
+      <div class="menu-footer"></div>
+    </div>
+    <div class="content">
+      <div class="header">
+        <div class="header-title-left">
+          <div class="header-switch"></div>
+          <div class="header-text">
+            <b class="header-text">CÔNG TY TNHH SẢN XUẤT - DỊCH VỤ - THƯƠNG MẠI - QUI PHÚC</b>
+          </div>
+          <div class="sprite"></div>
+        </div>
+        <div class="header-title--right">
+          <div class="sprite-1"></div>
+          <div class="info">
+            <div class="circle"></div>
+            <div><b>Nguyễn Văn Mạnh</b></div>
+          </div>
+
+          <div class="sprite-2"></div>
+        </div>
+      </div>
+      <div class="body">
+        <div class="title">
+          <div>
+            <b class="title-text">Nhân viên</b>
+          </div>
+          <div>
+            <button class="title-btn">Thêm mới nhân viên</button>
+          </div>
+        </div>
+        <div class="table">
+          <div class="table-head">
+            <input type="text" class="text-field" value="Tìm theo mã, tên nhân viên" />
+            <div class="title-item"></div>
+            <div class="title-item1"></div>
+          </div>
+          <div class="table-body">
+            <table id="tableEmployee" class="no-border">
+              <thead>
+                <tr>
+                  <th type="checkbox" class="min-width--checkbox">
+                    <div class="checkbox-size">
+                      <label class="container-checkbox">
+                        <input id="checkboxAll" type="checkbox" />
+                        <span class="checkmark"></span>
+                      </label>
+                    </div>
+                  </th>
+                  <th model-name="EmployeeCode">MÃ NHÂN VIÊN</th>
+                  <th model-name="FullName">TÊN NHÂN VIÊN</th>
+                  <th model-name="Gender">GIỚI TÍNH</th>
+                  <th model-name="DateOfBirth">NGÀY SINH</th>
+                  <th model-name="IdentityNumber" title="Số chứng minh nhân dân">
+                    SỐ CMND
+                  </th>
+                  <th model-name="PositionName">CHỨC DANH</th>
+                  <th model-name="DepartmentName">TÊN ĐƠN VỊ</th>
+                  <!-- <th>SỐ TÀI KHOẢN</th>
+                    <th>TÊN NGÂN HÀNG</th>
+                    <th>CHI NHÁNH TK NGÂN HÀNG</th> -->
+                  <th model-name="Salary">LƯƠNG</th>
+                  <th type="editfunction">CHỨC NĂNG</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="text-align">
+                    <div class="checkbox-size">
+                      <label class="container-checkbox">
+                        <input type="checkbox" name="elCheckbox" />
+                        <span class="checkmark"></span>
+                      </label>
+                    </div>
+                  </td>
+                  <td>00012</td>
+                  <td>Nguyễn Duy Mạnh</td>
+                  <td>Nam</td>
+                  <td class="text-center">30/04/2001</td>
+                  <td>187915295</td>
+                  <td>Nhân viên</td>
+                  <td>Công ty MISA</td>
+                  <td>48210000737222</td>
+                  <!-- <td>BIDV</td>
+                    <td>Vinh</td> -->
+                  <td>
+                    <div class="supper">
+                      <div class="dropdown-list">
+                        <div id="content">Sửa</div>
+                        <div class="dropdown">
+                          <div class="item-dropdown"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <div id="tbList-drop" class="body-selector-drop hiden">
+              <ul class="placehold" id="list-drop">
+                <li class="option-drop placehold">Nhân bản</li>
+                <li class="option-drop placehold">Sửa</li>
+                <li class="option-drop placehold">Ngừng sử dụng</li>
+              </ul>
+            </div>
+          </div>
+          <div class="table-footer">
+            <div class="table-footer--text">Tổng số: 1035 bản ghi</div>
+            <div class="table-footer--right">
+              <div class="hero">
+                <div id="tbList" class="body-selector hiden">
+                  <ul id="list">
+                    <li class="option">10 bản ghi trên 1 trang</li>
+                    <li class="option">20 bản ghi trên 1 trang</li>
+                    <li class="option">50 bản ghi trên 1 trang</li>
+                    <li class="option">100 bản ghi trên 1 trang</li>
+                    <li class="option">200 bản ghi trên 1 trang</li>
+                  </ul>
+                </div>
+                <div class="selector">
+                  <div id="selectField">
+                    <div id="selectText">10 bản ghi trên 1 trang</div>
+                  </div>
+                  <div class="divider">
+                    <div id="item" class="item-cbbx"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="pagination">
+                <a class="table-footer--text" href="#">Trước</a>
+                <a href="#" class="active">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">4</a>
+                <a href="#">5</a>
+                <a class="table-footer--text" href="#">Sau</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- popup -->
+  <div id="form" class="popup">
+    <div class="popup-size">
+      <div class="popup-header">
+        <div class="popup-title">
+          <div class="font-20">Thông tin nhân viên</div>
+          <div class="checkbox">
+            <div class="checkbox-size">
+              <label class="container-checkbox">
+                <input name="groupckb" type="checkbox" group="elCheckbox" />
+                <span class="checkmark"></span>
+              </label>
+            </div>
+            <div>Là khách hàng</div>
+          </div>
+          <div class="checkbox">
+            <div class="checkbox-size">
+              <label class="container-checkbox">
+                <input name="groupckb" type="checkbox" />
+                <span class="checkmark"></span>
+              </label>
+            </div>
+            <div class="font">Là nhà cung cấp</div>
+          </div>
+        </div>
+        <div class="popup-close">
+          <div class="request"></div>
+          <div class="close"></div>
+        </div>
+      </div>
+      <div class="popup-content">
+        <div class="employee-info">
+          <!-- Thông tin 1 -->
+          <div class="info-left">
+            <div class="m-row flex gap-8">
+              <div class="input-wrapper" style="width: 125px">
+                <label><b>Mã</b><span>*</span> </label>
+                <input id="txtEmployeeCode" autocomplete="off" style="width: 100px" type="text" name="inputrequired" placeholder="" required />
+              </div>
+              <div class="input-wrapper flex-1">
+                <label><b>Tên</b><span>*</span> </label>
+                <input id="txtFullName" autocomplete="off" type="text" name="inputrequired" placeholder="" required />
+              </div>
+            </div>
+            <div class="m-row flex gap-8">
+              <div class="input-wrapper flex-1">
+                <label><b>Đơn vị</b><span>*</span> </label>
+                <input  autocomplete="off" name="inputrequired" placeholder="" required />
+
+                <!-- <li class="option">Phòng hành chính tổng hợp</li>
+                        <li class="option">Phòng tổ chức nhân sự</li>
+                        <li class="option">Phòng kỹ thuật công nghệ</li> -->
+              </div>
+            </div>
+            <div class="m-row flex gap-8">
+              <div class="input-wrapper flex-1">
+                <label><b>Chức danh</b> </label>
+                <input id="txtPosition" autocomplete="off" id="inputcd" placeholder="" />
+              </div>
+            </div>
+          </div>
+          <!-- Thông tin 2 -->
+          <div class="info-right">
+            <div class="m-row flex gap-8">
+              <div class="input-wrapper">
+                <label><b>Ngày sinh</b> </label>
+                <input id="dateOfBirth" style="width: 120px" type="date" name="inputns" />
+              </div>
+              <div id="gioitinh" class="input-wrapper flex-1">
+                <label for="radioGender"><b>Giới tính</b> </label>
+                <div id="radioGender" class="radio-btn">
+                  <div class="radio radio-btn">
+                    <input type="radio" class="right-8" id="radio1" name="group-radio" />
+                    <label for="radio1">Nam</label>
+                  </div>
+                  <div class="radio radio-btn">
+                    <input type="radio" class="right-8" id="radio2" name="group-radio" />
+                    <label for="radio2">Nữ</label>
+                  </div>
+                  <div class="radio radio-btn">
+                    <input  type="radio" class="right-8" id="radio3" name="group-radio" />
+                    <label for="radio3">Khác</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="m-row flex gap-8">
+              <div class="input-wrapper">
+                <label title="Số chứng minh nhân dân"><b>Số CMND</b> </label>
+                <input id="txtIdentityCard" autocomplete="off"  style="width: 180px" type="text" id="inputcmnd" placeholder="" />
+              </div>
+              <div class="input-wrapper flex-1">
+                <label><b>Ngày cấp</b> </label>
+                <input id="dateOfIssue" autocomplete="off"  type="date" id="inputnc" placeholder="" />
+              </div>
+            </div>
+            <div class="m-row flex gap-8">
+              <div class="input-wrapper flex-1">
+                <label><b>Nơi cấp</b> </label>
+                <input id="txtIssuePlace" autocomplete="off"  id="inputnoic" placeholder="" />
+              </div>
+            </div>
+          </div>
+          <!-- Thông tin 3 -->
+          <div class="info-contact">
+            <div class="m-row flex gap-8">
+              <div class="input-wrapper flex-1">
+                <label><b>Địa chỉ</b> </label>
+                <input id="txtAddress" autocomplete="off"  id="inputdc" placeholder="" />
+              </div>
+            </div>
+            <div class="m-row flex gap-8 width-80">
+              <div class="input-wrapper flex-1">
+                <label title="Điện thoại di động"><b>ĐT di động</b> </label>
+                <input id="txtMobilePhone" autocomplete="off"  id="inputdtdt" placeholder="" />
+              </div>
+              <div class="input-wrapper flex-1">
+                <label title="Điện thoại cố định"><b>ĐT cố định</b> </label>
+                <input id="txtLandlinePhone" autocomplete="off"  id="inputdtcd" placeholder="" />
+              </div>
+              <div class="input-wrapper flex-1">
+                <label><b>Email</b> </label>
+                <input  id="txtEmail"  autocomplete="off"  id="inputemail" type="email" placeholder="abc123@gmail.com" />
+              </div>
+            </div>
+            <div class="m-row flex gap-8 width-80">
+              <div class="input-wrapper flex-1">
+                <label><b>Tài khoản ngân hàng</b> </label>
+                <input id="txtBankAccount" autocomplete="off" id="inputtknh" placeholder="" />
+              </div>
+              <div class="input-wrapper flex-1">
+                <label><b>Chi nhánh ngân hàng</b> </label>
+                <input id="txtBranch" autocomplete="off"  id="inputcnnh" placeholder="" />
+              </div>
+              <div class="input-wrapper flex-1">
+                <label><b>Tên ngân hàng </b> </label>
+                <input id="txtBankName" autocomplete="off"  id="inputtnh" placeholder="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="popup-footer">
+        <div>
+          <input class="btn-left btn" type="button" value="Hủy" />
+        </div>
+        <div class="btn-right">
+          <div>
+            <input class="btn btn-1" type="button" value="Cất" />
+          </div>
+          <div>
+            <input class="btn btn-2" type="button" value="Cất và thêm" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Toast message -->
+  <div class="body-toast" hidden>
+    <!-- Toast success -->
+    <div class="toast__success">
+      <div class="toast__left">
+        <div class="toast__icon"></div>
+        <p class="toast__text">
+          <strong class="text-success">Thành Công! </strong>Công việc bị đã bị
+          xoá
+        </p>
+      </div>
+      <div class="toast__right">
+        <div class="toast__additional">Hoàn tác</div>
+        <div class="toast__exit"></div>
+      </div>
+    </div>
+
+    <!-- Toast warning -->
+    <div class="toast__warning">
+      <div class="toast__left">
+        <div class="toast__icon-warning"></div>
+        <p class="toast__text">
+          <strong class="text-warning">Cảnh báo! </strong>Dữ liệu của bạn đã
+          bị thay đổi bởi người dùng khác
+        </p>
+      </div>
+      <div class="toast__exit"></div>
+    </div>
+
+    <!-- Toast error -->
+    <div class="toast__error">
+      <div class="toast__left">
+        <div class="toast__icon-error"></div>
+        <p class="toast__text-error">
+          <strong class="text-error">Lỗi! </strong>Không thể cập nhật được dữ
+          liệu. Vui lòng kiểm tra lại kết nối internet <br /><span class="toast__additional">Xem hướng dẫn</span>
+        </p>
+      </div>
+      <div class="toast__exit"></div>
+    </div>
+    <!-- Dialog warning -->
+    <div class="dialog__exit-employeeCode">
+      <div class="warning">
+        <div class="icon-warning"></div>
+        <p class="dialog-text">
+          Mã nhân viên &ltNV-0001&gt đã tồn tại trong hệ thống, vui lòng kiểm
+          tra lại
+        </p>
+      </div>
+      <div class="dialog-line"></div>
+      <input type="button" value="Đồng ý" class="btn-yes" />
+    </div>
+    <!-- <div class="feature__edit"></div> -->
+  </div>
+</body>
+<script src="/js/employee.js"></script>
+<script src="/js/combobox.js"></script>
+<script src="/js/dropdown.js"></script>
+
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>popup</title>
+  <link rel="stylesheet" href="/css/main.css" />
+</head>
+
+<body>
+  <div class="popup">
+    <div class="popup-size">
+      <div class="popup-header">
+        <div class="popup-title">
+          <div class="font-20">Thông tin nhân viên</div>
+          <div class="checkbox">
+            <input type="checkbox" name="" value="Là khách hàng" />
+            <div class="font">Là khách hàng</div>
+          </div>
+          <div class="checkbox">
+            <input type="checkbox" name="" value="Là nhà cung cấp" />
+            <div class="font">Là nhà cung cấp</div>
+          </div>
+        </div>
+        <div class="popup-close">
+          <div class="request"></div>
+          <div class="close"></div>
+        </div>
+      </div>
+      <div class="popup-content ">
+        <div class="employee-info">
+          <!-- Thông tin 1 -->
+          <div class="info-left">
+            <div class="m-row flex gap-8">
+              <div class="input-wrapper">
+                <label class="font"><b>Mã</b><span>*</span> </label>
+                <input style="width: 100px;" type="text" name="input" placeholder="" />
+              </div>
+              <div class="input-wrapper flex-1">
+                <label class="font"><b>Tên</b><span>*</span> </label>
+                <input type="text" name="input" placeholder="" />
+              </div>
+            </div>
+            <div class="m-row flex gap-8">
+              <div class="input-wrapper flex-1">
+                <label class="font"><b>Đơn vị</b><span>*</span> </label>
+                <input name="input" placeholder="" />
+              </div>
+            </div>
+            <div class="m-row flex gap-8">
+              <div class="input-wrapper flex-1">
+                <label class="font"><b>Chức danh</b> </label>
+                <input name="input" placeholder="" />
+              </div>
+            </div>
+          </div>
+          <!-- Thông tin 2 -->
+          <div class="info-right">
+            <div class="m-row flex gap-8">
+              <div class="input-wrapper">
+                <label class="font"><b>Ngày sinh</b> </label>
+                <input class="font-date" style="width: 120px; ;" type="date" name="input" />
+              </div>
+              <div class="input-wrapper flex-1">
+                <label class="font"><b>Giới tính</b> </label>
+                <div class="radio-btn">
+                  <div class="radio-btn">
+                    <input class="right-8" type="radio" id="gender1" name="gender" value="Nam" />
+                    <label for="gender1">Nam</label>
+                  </div>
+                  <div class="radio-btn">
+                    <input class="right-8" type="radio" id="gender2" name="gender" value="Nữ" />
+                    <label for="gender2">Nữ</label>
+                  </div>
+                  <div class="radio-btn">
+                    <input class="right-8" type="radio" id="gender3" name="gender" value="Khác" />
+                    <label for="gender3">Khác</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="m-row flex gap-8">
+              <div class="input-wrapper">
+                <label class="font" title="Số chứng minh nhân dân"><b>Số CMND</b> </label>
+                <input style="width: 180px;" type="text" name="input" placeholder="" />
+              </div>
+              <div class="input-wrapper flex-1">
+                <label class="font"><b>Ngày cấp</b> </label>
+                <input type="date" name="input" placeholder="" />
+              </div>
+            </div>
+            <div class="m-row flex gap-8">
+              <div class="input-wrapper flex-1">
+                <label class="font"><b>Nơi cấp</b> </label>
+                <input name="input" placeholder="" />
+              </div>
+            </div>
+          </div>
+          <!-- Thông tin 3 -->
+          <div class="info-contact">
+            <div class="m-row flex gap-8">
+              <div class="input-wrapper flex-1">
+                <label class="font"><b>Địa chỉ</b> </label>
+                <input name="input" placeholder="" />
+              </div>
+            </div>
+            <div class="m-row flex gap-8 width-80">
+              <div class="input-wrapper flex-1">
+                <label class="font" title="Điện thoại di động"><b>ĐT di động</b> </label>
+                <input name="input" placeholder="" />
+              </div>
+              <div class="input-wrapper flex-1">
+                <label class="font"><b>ĐT cố định</b> </label>
+                <input name="input" placeholder="" />
+              </div>
+              <div class="input-wrapper flex-1">
+                <label class="font"><b>Email</b> </label>
+                <input name="input" placeholder="abc123@gmail.com" />
+              </div>
+            </div>
+            <div class="m-row flex gap-8 width-80">
+              <div class="input-wrapper flex-1">
+                <label class="font"><b>Tài khoản ngân hàng</b> </label>
+                <input name="input" placeholder="" />
+              </div>
+              <div class="input-wrapper flex-1">
+                <label class="font"><b>Chi nhánh ngân hàng</b> </label>
+                <input name="input" placeholder="" />
+              </div>
+              <div class="input-wrapper flex-1">
+                <label class="font"><b>Tên ngân hàng
+                  </b> </label>
+                <input name="input" placeholder="" />
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="popup-footer">
+        <div class="btn-left btn">Hủy</div>
+        <div class="btn-right">
+          <div class="btn btn-1">Cất</div>
+          <div class="btn btn-2">Cất và thêm</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</body>
+<script src="/js/popup.js"></script>
+</html>

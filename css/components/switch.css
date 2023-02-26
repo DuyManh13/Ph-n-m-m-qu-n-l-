@@ -1,0 +1,198 @@
+.header-switch {
+    background: url(/Resource/img/Sprites.64af8f61.svg) no-repeat -844px -32px;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    margin-left:4px ;
+    margin-right: 12px;
+    cursor: pointer;
+}
+.sprite{
+    background: url(/Resource/img/Sprites.64af8f61.svg) no-repeat -1122px -358px;
+	width: 24px;
+	height: 24px;
+    cursor: pointer;
+}
+.sprite-1{
+    background: url(/Resource/img/Sprites.64af8f61.svg) no-repeat -788px -30px;
+	width: 24px;
+	height: 24px;
+    margin-right: 26px;
+    cursor: pointer;
+}
+.sprite-2{
+    background: url(/Resource/img/Sprites.64af8f61.svg) no-repeat -467px -405px;
+	width: 24px;
+	height: 24px;
+    margin-left: 4px;
+    cursor: pointer;
+}
+.circle{
+    background: url(/Resource/img/Sprites.64af8f61.svg) no-repeat -352px -894px;
+    border-radius: 50%;
+	width: 32px;
+	height: 32px;
+    cursor: pointer;
+}
+.menu-switch{
+    background: url(/Resource/img/Sprites.64af8f61.svg) no-repeat -424px -90px;
+	width: 24px;
+	height: 24px;
+    margin-left: 16px;
+    margin-right: 16px;
+    cursor: pointer;
+}
+.item-1{
+    background: url(/Resource/img/Sprites.64af8f61.svg) no-repeat -30px -1585px;
+	width: 24px;
+	height: 24px;
+    margin-left: 12px;
+    margin-right: 12px;
+    cursor: pointer;
+}
+.item-2{
+    background: url(/Resource/img/Sprites.64af8f61.svg) no-repeat -73px -1628px;
+	width: 24px;
+	height: 24px;
+    margin-left: 12px;
+    margin-right: 12px;
+    cursor: pointer;
+}
+.item-3{
+    background: url(/Resource/img/Sprites.64af8f61.svg) no-repeat -117px -1628px;
+	width: 24px;
+	height: 24px;
+    margin-left: 12px;
+    margin-right: 12px;
+    cursor: pointer;
+}
+.item-4{
+    background: url(/Resource/img/Sprites.64af8f61.svg) no-repeat -161px -1628px;
+	width: 24px;
+	height: 24px;
+    margin-left: 12px;
+    margin-right: 12px;
+    cursor: pointer;
+}
+.item-5{
+    background: url(/Resource/img/Sprites.64af8f61.svg) no-repeat -204px -1628px;
+	width: 24px;
+	height: 24px;
+    margin-left: 12px;
+    margin-right: 12px;
+    cursor: pointer;
+}
+.item-6{
+    background: url(/Resource/img/Sprites.64af8f61.svg) no-repeat -249px -1628px;
+	width: 24px;
+	height: 24px;
+    margin-left: 12px;
+    margin-right: 12px;
+    cursor: pointer;
+}
+.item-7{
+    background: url(/Resource/img/Sprites.64af8f61.svg) no-repeat -291px -1628px;
+	width: 24px;
+	height: 24px;
+    margin-left: 12px;
+    margin-right: 12px;
+    cursor: pointer;
+}
+.item-8{
+    background: url(/Resource/img/Sprites.64af8f61.svg) no-repeat -339px -1633px;
+	width: 24px;
+	height: 24px;
+    margin-left: 12px;
+    margin-right: 12px;
+    cursor: pointer;
+}
+.item-9{
+    background: url(/Resource/img/Sprites.64af8f61.svg) no-repeat -378px -1630px;
+	width: 24px;
+	height: 24px;
+    margin-left: 12px;
+    margin-right: 12px;
+    cursor: pointer;
+}
+.item-10{
+    background: url(/Resource/img/Sprites.64af8f61.svg) no-repeat -423px -1630px;
+	width: 24px;
+	height: 24px;
+    margin-left: 12px;
+    margin-right: 12px;
+    cursor: pointer;
+}
+.item-11{
+    background: url(/Resource/img/Sprites.64af8f61.svg) no-repeat -467px -1628px;
+	width: 24px;
+	height: 24px;
+    margin-left: 12px;
+    margin-right: 12px;
+    cursor: pointer;
+}
+.item-12{
+    background: url(/Resource/img/Sprites.64af8f61.svg) no-repeat -510px -1628px;
+	width: 24px;
+	height: 24px;
+    margin-left: 12px;
+    margin-right: 12px;
+    cursor: pointer;
+}
+.item-13{
+    background: url(/Resource/img/Sprites.64af8f61.svg) no-repeat -378px -1659px;
+	width: 24px;
+	height: 24px;
+    margin-left: 12px;
+    margin-right: 12px;
+    cursor: pointer;
+}
+.item-14{
+    background: url(/Resource/img/Sprites.64af8f61.svg) no-repeat -547px -1628px;
+	width: 24px;
+	height: 24px;
+    margin-left: 12px;
+    margin-right: 12px;
+    cursor: pointer;
+}
+.item-15{
+    background: url(/Resource/img/Sprites.64af8f61.svg) no-repeat -204px -1664px;
+	width: 24px;
+	height: 24px;
+    margin-left: 12px;
+    margin-right: 12px;
+    cursor: pointer;
+}
+.title-item{
+    background: url(/Resource/img/Sprites.64af8f61.svg) no-repeat -425px -30px;
+	width: 24px;
+	height: 24px;
+    cursor: pointer;
+    margin: 1px;
+    display: flex;
+    justify-content: flex-end;
+    margin: 12px 12px 12px 0px;
+}
+.title-item1{
+    background: url(/Resource/img/Sprites.64af8f61.svg) no-repeat -425px -201px;
+	width: 24px;
+	height: 24px;
+    cursor: pointer;
+    margin: 1px;
+    float: right;
+    display: flex;
+    justify-content: flex-end;
+    margin: 12px;
+}
+.close{
+    background: url(/Resource/img/Sprites.64af8f61.svg) no-repeat -147px -147px;
+	width: 24px;
+	height: 24px;
+    cursor: pointer;
+}
+.request{
+    background: url(/Resource/img/Sprites.64af8f61.svg) no-repeat -89px -145px;
+	width: 24px;
+	height: 24px;
+    cursor: pointer;
+}

@@ -1,0 +1,52 @@
+.item-dropdown {
+    background: url(/Resource/img/Sprites.64af8f61.svg) no-repeat -896px -360px;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+.dropdown {
+    background-color: #FFFFFF;
+    width: 40px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.dropdown-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.option-drop {
+    display: flex;
+    align-items: center;
+    width: 125px;
+    height: 36px;
+    border-radius: 4px;
+    background-color: #FFFFFF;
+}
+.body-selector-drop{
+    position: absolute;
+    width: 125px;
+    height: 108px;
+    padding-top: 8px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #FFFFFF;
+}
+.option-drop:hover {
+    background-color: #EEEFF1;
+    cursor: pointer;
+    color: #50B83C;
+}
+#list-drop {
+    width: 125px;
+    height: 36px;
+    padding: 0px;
+}
+#content:hover{
+    cursor: pointer;
+}
+#content{
+    color: #0075c0; 
+}
