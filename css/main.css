@@ -9,6 +9,7 @@
 @import url(/css/components/radiobtn.css);
 @import url(/css/components/combobox.css);
 @import url(/css/components/dropdown.css);
+@import url(/css/layout/mcombobox.css);
 /* 2. Css layout */
 @import url(./layout/body.css);
 @import url(./layout/header.css);

@@ -10,47 +10,6 @@ function hienthi() {
     tilte.textContent = "Sửa thông tin nhân viên";
     //Hiển thị form sửa
     tablePopup.style.display = "block";
-    //Gán giá trị cho các ô nhập
-    document.getElementById("txtEmployeeCode").value = item["EmployeeCode"];
-    // console.log(document.getElementById("txtEmployeeCode").value);
-    // console.log(item["EmployeeCode"]);
-    document.getElementById("txtEmployeeCode").disabled = true;
-    document.getElementById("txtFullName").value = item["FullName"];
-    document.getElementById("txtIdentityCard").value = item["IdentityNumber"];
-    document.getElementById("txtPosition").value = item["PositionName"];
-    document.getElementById("txtIssuePlace").value = item["IdentityPlace"];
-    document.getElementById("txtAddress").value = item["Address"];
-    document.getElementById("txtMobilePhone").value = item["PhoneNumber"];
-    document.getElementById("txtEmail").value = item["Email"];
-    // document.getElementById("cbbDepartment").value = item["DepartmentName"];
-    if (item["Gender"]) {
-        document.getElementsByName("group-radio")[(item["Gender"])].checked = true;
-    }
-
-    if (item["DateOfBirth"]) {
-        //Gán giá trị ngày 
-        let date = new Date(item["DateOfBirth"]);
-        //Lấy ra ngày
-        let day = date.getDate().toString().padStart(2, '0');
-        //Lấy ra tháng
-        let month = (date.getMonth() + 1).toString().padStart(2, '0');
-        //Lấy ra năm
-        let year = date.getFullYear();
-        document.getElementById("dateOfBirth").value = year + '-' + month + '-' + day;
-    }
-
-    if (item["IdentityDate"]) {
-        date = new Date(item["IdentityDate"]);
-        //Lấy ra ngày
-        day = date.getDate().toString().padStart(2, '0');
-        //Lấy ra tháng
-        month = (date.getMonth() + 1).toString().padStart(2, '0');
-        //Lấy ra năm
-        year = date.getFullYear();
-
-        document.getElementById("dateOfIssue").value = year + '-' + month + '-' + day;
-    }
-
 }
 
 
@@ -161,18 +120,6 @@ class EmployeePage {
 
                         // Lấy ra modul-name
                         const modelName = col.getAttribute("model-name");
-                        // console.log(modelName.length);
-                        // for (let i = 0; i < modelName.length; i++) {
-                        //     if (modelName == "Salary") {
-                        //         const value = item[modelName];
-                        //         let tdElement = document.createElement("td");
-                        //         tdElement.classList.add("text-right");
-                        //         tdElement.textContent = value;
-                        //         trElement.append(tdElement);
-                        //         break;
-                        //     }
-
-                        // }
                         const value = item[modelName];
                         let tdElement = document.createElement("td");
                         tdElement.setAttribute("ondblclick", "hienthi()");

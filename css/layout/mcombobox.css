@@ -1,0 +1,46 @@
+.mcombobox{
+    position: relative;
+}
+
+.mcombobox__select{
+    display: none;
+    position: absolute;
+    list-style: none;
+    max-height: 200px;
+    width: 400px;
+    border-radius: 4px;
+    padding: 8px;
+    overflow-y: auto;
+    background-color: #FFFFFF;
+    box-shadow: 0 4px 16px 0px rgba(23,27,42,0.24);
+}
+
+.mcombobox__option{
+    padding: 8px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.mcombobox__option:hover{
+    background-color: #50B83C;
+    color: #FFFFFF;
+}
+
+.mcombobox__option.active{
+    background-color: #E6F2FF;
+}
+.emmployee__input{
+    position: relative;
+    width: 392px;
+}
+.item-mcbbx{
+    background: url(/Resource/img/Sprites.64af8f61.svg) no-repeat -371px -358px;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    position: absolute;
+    right: 12px;
+    top: 9px;
+}
+.bgrcolor{
+background-color: red;
+}
